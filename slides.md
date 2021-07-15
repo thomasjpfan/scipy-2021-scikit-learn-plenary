@@ -103,7 +103,7 @@ Find our more in our [User Guide](https://scikit-learn.org/stable/modules/ensemb
 ---
 
 # Self-training Meta-Estimator
-### `SelfTrainingClassifier`
+Supervised classifier can function as a semi-supervised classifier, allowing it to learn from unlabeled data.
 
 ```python
 *from sklearn.semi_supervised import SelfTrainingClassifier
