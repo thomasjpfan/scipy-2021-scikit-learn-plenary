@@ -34,16 +34,27 @@ class: chapter-slide
 
 # Community Sprints
 
-.g[
+.g.g-middle[
 .g-8[
-- [Data Umbrella Africa and the Middle East](https://reshamas.github.io/data-umbrella-afme-2021-scikit-learn-sprint-report/): Feb 2021 organized by Reshama Shaikh
-- [Scikit-learn Inria Foundation Japan](https://github.com/scikit-learn-inria-fondation/FujitsuSprintMay2021): May 2021 organized by Norbert Preining
-- [Data Umbrella Latin America](https://latam2021.dataumbrella.org/): June 2021 organized by Reshama Shaikh
+- [**Africa and the Middle East** with Data Umbrella](https://reshamas.github.io/data-umbrella-afme-2021-scikit-learn-sprint-report/): Feb 2021 organized by Reshama Shaikh
+- [ **Japan** with Scikit-learn Inria Foundation](https://github.com/scikit-learn-inria-fondation/FujitsuSprintMay2021): May 2021 organized by Norbert Preining
+- [**Latin America** with Data Umbrella](https://latam2021.dataumbrella.org/): June 2021 organized by Reshama Shaikh
 ]
-.g-4[
+.g-4.center[
 ![](images/data-umbrella.jpeg)
+![](images/inria.png)
 ]
 ]
+
+---
+
+# Scikit-learn MOOC
+### https://inria.github.io/scikit-learn-mooc/
+
+.center[
+![](images/mooc.png)
+]
+
 ---
 
 class: chapter-slide
@@ -57,6 +68,7 @@ Abhinav Gupta, Abo7atm, Adam Spannbauer, Adrian Garcia Badaracco, Adrian Sadłoc
 ---
 
 # Successive Halving for tuning hyper-parameters
+### `HalvingRandomSearchCV`
 
 ```python
 from sklearn.experimental import enable_halving_search_cv  # noqa
@@ -67,7 +79,7 @@ rsh.fit(X, y)
 ```
 
 .center[
-![:scale 40%](images/successive_halving.png)
+![:scale 35%](images/successive_halving.png)
 ]
 
 Find our more in our [User Guide](https://scikit-learn.org/stable/modules/grid_search.html#successive-halving-user-guide)
@@ -91,8 +103,7 @@ Find our more in our [User Guide](https://scikit-learn.org/stable/modules/ensemb
 ---
 
 # Self-training Meta-Estimator
-
-Supervised classifier can function as a semi-supervised classifier, allowing it to learn from unlabeled data.
+### `SelfTrainingClassifier`
 
 ```python
 *from sklearn.semi_supervised import SelfTrainingClassifier
